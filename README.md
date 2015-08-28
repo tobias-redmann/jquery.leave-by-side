@@ -46,6 +46,6 @@ When your element is very thin or small and someone moves the mouse very fast, t
 
 Feel free to fork an add additional work. This is just a basic idea which works fine for my use case.
 
-Visit our website: [http://www.besserdich-redmann.com][1] or contact me tr@besserdich-redmann.com also via twitter @tobias\_redmann_
+Visit our website: [http://www.besserdich-redmann.com][1] or contact me tr@besserdich-redmann.com also via twitter @tobias\_redmann
 
 [1]:	http://www.besserdich-redmann.com
