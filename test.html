@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 basic skeleton</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="src/jquery.leave-by-side.js"></script>
+
+</head>
+<body>
+
+<div id="element" style="border: 5px solid silver; background:silver; margin-top: 100px; margin-left: auto; margin-right: auto; height: 100px; width: 100px; "></div>
+
+<div id="element2" style="border: 5px solid silver; background:silver; margin-top: 500px; margin-left: auto; margin-right: auto; height: 100px; width: 100px; "></div>
+
+
+<script>
+
+$( document ).ready(function() {
+
+    /* without passing elements */
+    $('#element').leaveBySide({
+        top: function() {
+            console.log('top');
+        },
+        bottom: function() {
+            console.log('bottom');
+        },
+        right: function() {
+            console.log('right');
+        },
+        left: function() {
+            console.log('left');
+        }
+    });
+
+    /* Passing elements as well */
+    $('#element2').leaveBySide({
+        top: function(elem) {
+            elem.css('border-top-color', 'red');
+            console.log('top2');
+        },
+        bottom: function(elem) {
+            elem.css('border-bottom-color', 'yellow');
+            console.log('bottom2');
+        },
+        right: function(elem) {
+            elem.css('border-right-color', 'blue');
+            console.log('right2');
+        },
+        left: function(elem) {
+            elem.css('border-left-color', 'green');
+            console.log('left2');
+        }
+    });
+
+
+});
+
+</script>
+</body>
+</html>
